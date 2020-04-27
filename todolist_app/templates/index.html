@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+<title>Welcome to Task Mode</title>
+{% endblock title %}
+
+ {% block content %}
+
+    <div class='container'>
+     <div class= 'row mt-5'>
+        <div class = "col-lg-4 " >
+        <img src="{% static 'images/img1.jpg' %}" alt="Notes" class= "rounded-lg shadow"  width="360" height="250">
+        </div>
+        <div class = "col-lg-4">
+        <img src="{% static 'images/img2.jpg' %}" alt="Notes" class= "rounded-lg shadow" width="360" height="250">
+        </div>
+        <div class = "col-lg-4">
+        <img src="{% static 'images/img3.jpg' %}" alt="Notes" class= "rounded-lg shadow" width="360" height="250">
+        </div>
+    </div>
+    <div class="row mt-5">
+        
+        <div class= "col-md-10 offset-md-1">
+
+       <center><p class="h1 text-light"> Quick And Easy To Use, Anytime, AnyWhere! </p></center>
+       <center> <p class="h2 mt-3"> Plan You Day Better, Get Your Life Organized " </P></center>
+        <center><p class="h3"> TASK MODE Lets You Keep Track of Your Task In One Place</p></center>
+
+            <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow"> Let's Get Started</button></a></center>
+        </div>
+    
+    </div>
+    
+    </div>
+</div>
+ {% endblock content %}
